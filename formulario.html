@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo - Bancaamiga</title>
+</head>
+<body bgcolor="#B6D0E2">
+    <h1>Solicitud de Empleo - Bancamiga</h1>
+    <form action="formulariopt2.html" method="formulario.html">
+        <fieldset>
+            <legend>Datos Personales</legend><br>
+            Nombre completo:<br>
+            <input type="text" name="nombre" required><br><br>
+
+            Fecha de nacimiento:<br>
+            <input type="date" name="fdn"><br><br>
+
+            Número de identificación (CI/RIF)<br>
+            <input type="text" name="identificacion"><br><br>
+
+            Género:<br>
+            <input type="radio" name="genero" value="1"> Femenino <br>
+            <input type="radio" name="genero" value="2"> Masculino <br>
+            <input type="radio" name="genero" value="3"> Otro <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Contacto</legend><br>
+            Correo electrónico:<br>
+            <input type="email" name="email"><br><br>
+
+            Número de teléfono:<br>
+            <input type="tel" name="phone"><br><br>
+
+            Dirección:<br>
+            <input type="text" name="direcc"><br><br>
+
+            Ciudad:<br>
+            <input type="text" name="ciudad"><br><br>
+
+            Estado/Provincia:<br>
+            <input type="text" name="estado"><br><br>
+
+            Código Postal:<br>
+            <input type="text" name="codigo">
+        <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educación</legend><br>
+            Nivel de educación más alto alcanzado:<br>
+            <input type="radio" name="educacion" value="1">Educación Básica<br>
+            <input type="radio" name="educacion" value="2">Educación Media General<br>
+            <input type="radio" name="educacion" value="3">Educación Superior<br><br>
+
+            Institución educativa:</label><br>
+            <input type="text" name="institucion"><br><br>
+
+            Fecha de graduación:<br>
+            <input type="date" name="graduacion">
+        <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Postulación</legend><br>
+            ¿A qué puesto desea postularse?
+            <select name="puesto" required>
+                <option value="">Seleccione una opción</option>
+                <option value="cajero">Cajero</option>
+                <option value="gestor">Gestor</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="gerente">Gerente Administrativo de Oficina</option>
+                <option value="seguridad">Oficial de Seguridad</option>
+            </select>
+        <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Disponibilidad de Tiempo</legend><br>
+            ¿Cuál es su disponibilidad?
+            <select name="disponibilidad" required>
+                <option value="">Seleccione una opción</option>
+                <option value="completo">Tiempo completo</option>
+                <option value="medio_tiempo">Medio tiempo</option>
+                <option value="flexible">Horario flexible</option>
+            </select><br><br>
+
+            Especifique horarios disponibles:
+            <textarea name="disponibilidad_horarios"></textarea>
+        <br><br>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Conocimientos en Herramientas Tecnológicas</legend><br>
+            Seleccione las herramientas tecnológicas que domina:<br>
+            <input type="checkbox" name="tecnologias">Excel<br>
+
+            <input type="checkbox" name="tecnologias">Software Bancario<br>
+
+            <input type="checkbox" name="tecnologias">Automatizacion de procesos<br>
+
+            <input type="checkbox" name="tecnologias">Otros<br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiencia Laboral</legend><br>
+            Nombre del empleador anterior:<br>
+            <input type="text" name="empleador"><br><br>
+
+            Posición ocupada:<br>
+            <input type="text" name="posicion"><br><br>
+
+            Período de trabajo (Desde - Hasta):<br>
+            <input type="text" name="periodo"><br><br>
+
+            Teléfono del trabajo:<br>
+            <input type="tel" name="tlf_trabajo"><br><br>
+
+            Responsabilidades:<br>
+            <textarea name="responsabilidades" rows="4" cols="40"></textarea>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Habilidades y Certificaciones</legend><br>
+            Habilidades relevantes:<br>
+            <textarea name="habilidades" rows="4" cols="40"></textarea><br><br>
+
+            Certificaciones:<br>
+            <textarea name="certificaciones" rows="4" cols="40"></textarea>
+        <br><br>
+        </fieldset>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
